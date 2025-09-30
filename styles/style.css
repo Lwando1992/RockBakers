@@ -11,10 +11,10 @@ body {
 
 h1 {
   font-size: 5cm;
- color: rgba(216, 98, 141, 0.973);
+  color: rgba(216, 98, 141, 0.973);
   margin: 0 0 2rem;  
-                  font-size: 50px;
-                font-style: oblique;
+  font-size: 50px;
+  font-style: oblique;
 }
 
 h2 {
@@ -27,9 +27,8 @@ h1 {
     font-size: 4rem;
 }
 
-  p {
-                font-size: 16px;
-                font-family: 'Verdana', sans-serif;
+  p { font-size: 16px;
+       font-family: 'Verdana', sans-serif;
             }
             
 
