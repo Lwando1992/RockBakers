@@ -3,77 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery Website</title>
-    <link rel="stylesheet" href="styles.cs">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bakery Homepage</title>
 </head>
 <body>
     <header>
-            <div class = "logo">
+        <div class = "logo">
                 <h2>RockBakers</h2> 
             </div>
-            <nav>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="order.html">Online Order</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="icons">
-                <span class="search-icon">🔍</span>
-                <span class="cart-icon">🛒</span>
-            </div>
-        </header>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Online Order</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <span class="search-icon">🔍</span>
+            <span class="cart-icon">🛒</span>
+        </div>
+    </header>
     <section class="hero">
-        <img src="im" alt="Delicious Baked Goods">
+        <img src="images/the-easiest-loaf-of-bread-youll-ever-bake.jpg" alt="Delicious Baked Goods">
         <div class="cta">
             <h1>Order Now</h1>
-           <a href="menu.html"><button>Explore Our Menu</button></a> 
         </div>
     </section>
- <h2>Featured Products</h2>
     <section class="featured-products">
-        <div class="pruduct">
-            <h3>Product 1</h3>
-            <img src="images/chocolate-chip-muffins-featured.jpg" alt="Product1">
-            
-            <p>Short Description</p>
-            <p>Price</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="pruduct">
-            <h3>Product 2</h3>
-            <img src="images/images.jfif" alt="Product1">
-            <p>Short Description</p>
-            <p>Price</p>
-            <button>Add to Cart</button>
+        <h2>Featured Products</h2>
+        <div class="grid">
+            <div class="product-item">Product 1<img src="images/istockphoto-473248606-612x612.jpg" alt=""></div>
+            <div class="product-item">Product 2<img src="images/istockphoto-175548506-612x612.jpg" alt=""></div>
+            <div class="product-item">Product 3<img src="images/blueberry-muffins-4-2-2.jpg" alt=""></div>
+            <div class="product-item">Product 4<img src="images/41279_2.jpg" alt=""></div>
         </div>
     </section>
-
     <section class="our-story">
         <h2>Our Story</h2>
-        <p>Learn more about our journey and passion for baking.</p>
-        <a href="#about">Read More</a>
+        <p>Brief text about the bakery...</p>
+        <a href="about.html">Read More</a>
     </section>
-
     <section class="testimonials">
-        <h2>What Our Customers Say</h2>
+        <h2>Testimonials</h2>
         <div class="carousel">
-            <div class="testimonial">"Best bakery in town!"</div>
-            <div class="testimonial">"Delicious treats every time!"</div>
-            <div class="testimonial">"I love their pastries!"</div>
+            <p>Customer review 1</p>
+            <p>Customer review 2</p>
         </div>
     </section>
-
     <footer>
-        <div class="contact-info">Contact us: (123) 456-7890</div>
-        <div class="social-media">Follow us on social media</div>
-        <div class="quick-nav">
-            <a href="#privacy">Privacy Policy</a>
-        </div>
+        <p>Contact: info@bakery.com</p>
+        <p>Follow us on social media</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
