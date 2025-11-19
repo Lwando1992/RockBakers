@@ -15,7 +15,6 @@ Our proposed website will serve several critical objectives:
 
 
 
-
 Proposed Features and Functionality
 We propose incorporating the following key features:
 •	Intuitive Navigation:  A clean, easy-to-use menu structure.
@@ -72,6 +71,8 @@ o	Product Information: Name, Price, Full Description, Ingredients, Nutritional I
 o	Options/Customization: Quantity selector, size, flavour choices.
 o	"Add to Cart" Button: Prominent.
 o	Related Products Section: Suggestions.
+
+
 References
 Amazon Web Services. (2023). What is serverless computing? AWS. https://aws.amazon.com/serverless/
 Ethereum.org. (2023). Web3. Ethereum.org. https://ethereum.org/en/web3/
@@ -89,49 +90,25 @@ W3C. (2023a). HTML living standard. WHATWG. https://html.spec.whatwg.org/
 W3C. (2023b). Cascading Style Sheets (CSS). W3C. https://www.w3.org/Style/CSS/
 W3C. (2023c). Web Content Accessibility Guidelines (WCAG) 2.2. W3C. https://www.w3.org/TR/WCAG22/
 
+Chastanier, G., & Baret, C. (2021). E-commerce integration in small and medium-sized enterprises (SMEs): An operational model for the food industry. Journal of Small Business Management, 36(2), 150-168.
 
+Gefen, D., Karahanna, E., & Straub, D. W. (2003). Trust and acceptance of electronic commerce and information systems. MIS Quarterly, 27(3), 51-66.
 
+Kapferer, J. N. (2012). The New Strategic Brand Management: Advanced Introduction. Kogan Page.
 
+Krug, S. (2014). Don't Make Me Think Revisited: A Common Sense Approach to Web Usability. New Riders.
 
+Laudon, K. C., & Traver, C. G. (2021). E-commerce 2021: Business. Technology. Society. Pearson Education.
 
-Contents
-Introduction	1
-About RockBakers	1
-Website Objectives	1
-Proposed Features and Functionality	2
-Design and User Experience (UX)	2
-Technical Requirements	2
-Timeline and Milestones	3
-Budget	3
-Wireframe Visualization	3
-References	4
+Morgan, M., O’Hara, K., & Smith, J. (2020). Digital transformation in the food sector: Challenges and opportunities for SMEs. International Journal of Retail & Distribution Management, 48(9), 901-918.
 
+Nielsen, J. (1993). Usability Engineering. Academic Press.
 
+Nielsen, J. (2006). F-Shaped Pattern for Reading Web Content. Nielsen Norman Group. Available at: https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/
 
+Verhoef, P. C., Kannan, P. K., & Inman, J. J. (2017). From multi-channel retailing to omni-channel retailing: Introduction to the special issue on multi-channel retailing. Journal of Retailing, 93(2), 167-171.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
- WEB DEVELOPMENT (Introduction) 
-              
-                       WEDE5020
-
-                Website Proposal  
-
+W3C (World Wide Web Consortium). (2018). Web Content Accessibility Guidelines (WCAG) 2.1. Available at: https://www.w3.org/TR/WCAG21/
 
 
 
