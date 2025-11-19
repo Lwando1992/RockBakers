@@ -1,37 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RockBakers - Artisan Bakery & Fresh Baked Goods</title>
+  <meta name="description" content="RockBakers - Premium artisan bakery offering fresh bread, pastries, and custom cakes. Order online for pickup or delivery.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class = "logo">
-                <h2>RockBakers</h2> 
-            </div>
-        <nav>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="order.html">Online Order</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="icons">
-            <span class="search-icon">🔍</span>
-            <span class="cart-icon">🛒</span>
-        </div>
-    </header>
-    <section class="blog-posts">
-        <h2>Our Latest Posts</h2>
-        <article>
-            <h3>Blog Post Title</h3>
-            <p>Excerpt of the blog post...</p>
-            <a href="#">Read More</a>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h1>RockBakers</h1>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Products</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="#" class="nav-link cart-link" id="cart-toggle">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+<!-- Blog page -->
+  <section id="blog" class="blog-section">
+    <div class="container">
+      <h2 class="section-title">From Our Kitchen</h2>
+      <div class="blog-grid">
+        <article class="blog-post">
+          <img src="https://images.pexels.com/photos/20410177/pexels-photo-20410177.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Creative arrangement of various breads with flowers against a draped backdrop." width="433" height="650">
+          <div class="blog-content">
+            <h3>The Art of Sourdough: A Beginner's Guide</h3>
+            <p class="blog-date">March 15, 2025</p>
+            <p>Discover the ancient art of sourdough baking with our step-by-step guide to creating your own starter and baking your first loaf.</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
         </article>
-    </section>
+        
+        <article class="blog-post">
+          <img src="https://images.pexels.com/photos/34677438/pexels-photo-34677438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="bakery fresh bread pastries" width="488" height="650">
+          <div class="blog-content">
+            <h3>Seasonal Ingredients: Spring Flavors</h3>
+            <p class="blog-date">March 10, 2025</p>
+            <p>Learn how we incorporate fresh spring ingredients into our seasonal menu, bringing you the best flavors of the season.</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </article>
+        
+        <article class="blog-post">
+          <img src="https://images.pexels.com/photos/3789032/pexels-photo-3789032.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Golden baguettes displayed in a bakery, perfect for a delicious breakfast." width="488" height="650">
+          <div class="blog-content">
+            <h3>Behind the Scenes: Our Daily Baking Process</h3>
+            <p class="blog-date">March 5, 2025</p>
+            <p>Take a peek behind the curtain and see how we start each day at 4 AM to bring you the freshest baked goods.</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+    <!-- Shopping Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Shopping Cart</h2>
+        <span class="close" id="close-cart">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div id="cart-items"></div>
+        <div class="cart-total">
+          <strong>Total: R<span id="cart-total">0.00</span></strong>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="clear-cart">Clear Cart</button>
+        <button class="btn btn-primary" id="checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>RockBakers</h3>
+          <p>Artisan bakery serving fresh, handcrafted breads and pastries since 2010.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Custom Cakes</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">Wholesale</a></li>
+            <li><a href="#">Baking Classes</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 RockBakers. All rights reserved. | Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
+

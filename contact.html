@@ -1,42 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RockBakers - Artisan Bakery & Fresh Baked Goods</title>
+  <meta name="description" content="RockBakers - Premium artisan bakery offering fresh bread, pastries, and custom cakes. Order online for pickup or delivery.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class = "logo">
-                <h2>RockBakers</h2> 
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h1>RockBakers</h1>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Products</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="#" class="nav-link cart-link" id="cart-toggle">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Contact page -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Visit Us Today</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3>Location</h3>
+            <p>123 Baker Street<br>Downtown District<br>City, State 12345</p>
+          </div>
+          <div class="contact-item">
+            <h3>Hours</h3>
+            <p>Monday - Friday: 6:00 AM - 7:00 PM<br>Saturday: 7:00 AM - 8:00 PM<br>Sunday: 8:00 AM - 6:00 PM</p>
+          </div>
+          <div class="contact-item">
+            <h3>Contact</h3>
+            <p>Phone: (063) 799-BAKE<br>Email: hello@rockbakers.com</p>
+          </div>
+          <div class="social-links">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="Twitter">Twitter</a>
             </div>
-        <nav>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="order.html">Online Order</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="icons">
-            <span class="search-icon">🔍</span>
-            <span class="cart-icon">🛒</span>
+          </div>
         </div>
-    </header>
-    <section class="contact-form">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
-            <button type="submit">Send Message</button>
+        
+        <form class="contact-form" id="contact-form">
+          <h3>Get in Touch</h3>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <select id="subject" name="subject" required>
+              <option value="">Select Subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="catering">Catering Services</option>
+              <option value="custom">Custom Orders</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
-    </section>
+      </div>
+      
+      <div class="map-container">
+        <div class="map-placeholder">
+          <p>Interactive Map Coming Soon</p>
+          <p>123 Baker Street, Downtown District</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Shopping Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Shopping Cart</h2>
+        <span class="close" id="close-cart">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div id="cart-items"></div>
+        <div class="cart-total">
+          <strong>Total: R<span id="cart-total">0.00</span></strong>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="clear-cart">Clear Cart</button>
+        <button class="btn btn-primary" id="checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>RockBakers</h3>
+          <p>Artisan bakery serving fresh, handcrafted breads and pastries since 2010.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Custom Cakes</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">Wholesale</a></li>
+            <li><a href="#">Baking Classes</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 RockBakers. All rights reserved. | Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
-

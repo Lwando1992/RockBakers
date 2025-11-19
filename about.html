@@ -1,65 +1,140 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-
-        <header>
-            <div class = "logo">
-                <h2>RockBakers</h2> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RockBakers - Artisan Bakery & Fresh Baked Goods</title>
+  <meta name="description" content="RockBakers - Premium artisan bakery offering fresh bread, pastries, and custom cakes. Order online for pickup or delivery.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h1>RockBakers</h1>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Products</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="#" class="nav-link cart-link" id="cart-toggle">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+  <!-- About page -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">Our Story</h2>
+          <p>Founded in 2010, RockBakers began as a small family bakery with a simple mission: to bring the authentic taste of artisan baking to our community. What started as a passion project has grown into a beloved local institution.</p>
+          <p>We believe in using only the finest ingredients, traditional techniques, and time-honored recipes passed down through generations. Every loaf, every pastry, and every cake is crafted with care and attention to detail.</p>
+          <p>Our commitment to quality and community has made us more than just a bakery – we're a gathering place where neighbors become friends and every visit feels like coming home.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <h3>15+</h3>
+              <p>Years of Excellence</p>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="order.html">Online Order</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="icons">
-                <span class="search-icon">🔍</span>
-                <span class="cart-icon">🛒</span>
+            <div class="stat">
+              <h3>50+</h3>
+              <p>Daily Fresh Items</p>
             </div>
-        </header>
-        <section class="about">
-            <h1>About RockBakers</h1>
-            <p>
-                Rockackers began its journey five years ago as a humble local backery,
-                quickly gaining renown for our artisan breads and delectable pastries.
-                Founded on principle of crafting superior baked goods with passion and
-                naturalingrendiants, we have grown steadily, building a loyal customer base
-                through our commitment to quality and community.Our offerings range from 
-                classic sourdoughs to custom-design celebration cakes, consitently
-                delivering freshness and innovation. 
-            </p>
-            <h2>Mission Statement</h2>
-            <p>Our mission at RockBakers is to delight our customers by concsistently
-                baking-high quality,delicious, and inovative products, fostering a sense
-                of community, and celebrating the joy of shared food experiences.
-            </p>
-            <h2>Vission Statement</h2>
-            <p>We enviosion Rockackers becoming the leading artisan backery know
-                for exceptional quality, sustainale practices and an unwavering
-                commitment to customer satisfaction, expanding our reach while retaining
-                cherished local charm.
-            </p>
-            <h2>Target Audience</h2>
-            <p> Our primary target audience includes local families seeking daily fresh bread,
-                professionals desiring quality lunch options,individuals planning special events
-                requiring custom cakesw, and food enthusiast valuing artisalnal craftsmanships
-            </p>
-        </section>
-        <footer>
-            <div class="contact-info">Contact us: (123) 456-7890</div>
-            <div class="social-media">Follow us on social media</div>
-            <div class="quick-nav">
-                <a href="#privacy">Privacy Policy</a>
+            <div class="stat">
+              <h3>1000+</h3>
+              <p>Happy Customers</p>
             </div>
-        </footer>
-
-    </body>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://images.pexels.com/photos/6937414/pexels-photo-6937414.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Two chefs smiling and holding a rolling pin in a bustling kitchen setting." width="464" height="650">
+        </div>
+      </div>
+      
+      <div class="team-section">
+        <h3>Meet Our Team</h3>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="https://images.pexels.com/photos/6605189/pexels-photo-6605189.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A chef in a traditional Portuguese bakery tosses pizza dough with skill, illuminated by natural daylight." width="434" height="650">
+            <h4>Master Baker Marco</h4>
+            <p>Head Baker & Co-Founder</p>
+          </div>
+          <div class="team-member">
+            <img src="https://images.pexels.com/photos/15807002/pexels-photo-15807002.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Two female chefs in a busy kitchen preparing meals, captured in a classic black and white style." width="429" height="650">
+            <h4>Chef Sarah & Maria</h4>
+            <p>Pastry Specialists</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Shopping Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Shopping Cart</h2>
+        <span class="close" id="close-cart">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div id="cart-items"></div>
+        <div class="cart-total">
+          <strong>Total: R<span id="cart-total">0.00</span></strong>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="clear-cart">Clear Cart</button>
+        <button class="btn btn-primary" id="checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+         <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>RockBakers</h3>
+          <p>Artisan bakery serving fresh, handcrafted breads and pastries since 2010.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Custom Cakes</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">Wholesale</a></li>
+            <li><a href="#">Baking Classes</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 RockBakers. All rights reserved. | Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
 </html>

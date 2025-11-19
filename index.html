@@ -1,61 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Bakery Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RockBakers - Artisan Bakery & Fresh Baked Goods</title>
+  <meta name="description" content="RockBakers - Premium artisan bakery offering fresh bread, pastries, and custom cakes. Order online for pickup or delivery.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class = "logo">
-                <h2>RockBakers</h2> 
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h1>RockBakers</h1>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Products</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="#" class="nav-link cart-link" id="cart-toggle">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Artisan Baking at Its Finest</h1>
+      <p class="hero-subtitle">Fresh, handcrafted breads and pastries made daily with love and tradition</p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn btn-primary">Shop Now</a>
+        <a href="about.html" class="btn btn-secondary">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/pic1.jpeg" alt="Warm bakery interior showcasing a variety of cakes and pastries on display shelves." width="975" height="1300">
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <div class="container">
+      <h2 class="section-title">Today's Fresh Selections</h2>
+      <div class="products-grid">
+        <div class="product-card featured">
+          <img src="images/pic2.jpeg" alt="Close-up of two freshly baked loaves with crispy crust, ideal for food and still life photography." width="975" height="650">
+          <div class="product-info">
+            <h3>Artisan Sourdough</h3>
+            <p>Traditional sourdough with a perfect crust and tangy flavor</p>
+            <span class="price">R8.50</span>
+            <button class="btn btn-small add-to-cart" data-product="Artisan Sourdough" data-price="8.50">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card featured">
+          <img src="images/pic3.jpeg" alt="Tempting almond-topped croissants showcasing golden layers." width="488" height="650">
+          <div class="product-info">
+            <h3>Almond Croissants</h3>
+            <p>Buttery, flaky pastry filled with sweet almond cream</p>
+            <span class="price">R4.25</span>
+            <button class="btn btn-small add-to-cart" data-product="Almond Croissants" data-price="4.25">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card featured">
+          <img src="images/pic4.jpeg" alt="A close-up view of two freshly baked cinnamon rolls served on a white plate." width="975" height="650">
+          <div class="product-info">
+            <h3>Cinnamon Rolls</h3>
+            <p>Warm, gooey cinnamon rolls with cream cheese glaze</p>
+            <span class="price"> R3.75</span>
+            <button class="btn btn-small add-to-cart" data-product="Cinnamon Rolls" data-price="3.75">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About page -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">Our Story</h2>
+          <p>Founded in 2010, RockBakers began as a small family bakery with a simple mission: to bring the authentic taste of artisan baking to our community. What started as a passion project has grown into a beloved local institution.</p>
+          <p>We believe in using only the finest ingredients, traditional techniques, and time-honored recipes passed down through generations. Every loaf, every pastry, and every cake is crafted with care and attention to detail.</p>
+          <p>Our commitment to quality and community has made us more than just a bakery – we're a gathering place where neighbors become friends and every visit feels like coming home.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <h3>15+</h3>
+              <p>Years of Excellence</p>
             </div>
-        <nav>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="order.html">Online Order</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="icons">
-            <span class="search-icon">🔍</span>
-            <span class="cart-icon">🛒</span>
+            <div class="stat">
+              <h3>50+</h3>
+              <p>Daily Fresh Items</p>
+            </div>
+            <div class="stat">
+              <h3>1000+</h3>
+              <p>Happy Customers</p>
+            </div>
+          </div>
         </div>
-    </header>
-    <section class="hero">
-        <img src="images/the-easiest-loaf-of-bread-youll-ever-bake.jpg" alt="Delicious Baked Goods">
-        <div class="cta">
-            <h1>Order Now</h1>
+        <div class="about-image">
+          <img src="https://images.pexels.com/photos/6937414/pexels-photo-6937414.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Two chefs smiling and holding a rolling pin in a bustling kitchen setting." width="464" height="650">
         </div>
-    </section>
-    <section class="featured-products">
-        <h2>Featured Products</h2>
-        <div class="grid">
-            <div class="product-item">Product 1<img src="images/istockphoto-473248606-612x612.jpg" alt=""></div>
-            <div class="product-item">Product 2<img src="images/istockphoto-175548506-612x612.jpg" alt=""></div>
-            <div class="product-item">Product 3<img src="images/blueberry-muffins-4-2-2.jpg" alt=""></div>
-            <div class="product-item">Product 4<img src="images/41279_2.jpg" alt=""></div>
+      </div>
+      
+      <div class="team-section">
+        <h3>Meet Our Team</h3>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="https://images.pexels.com/photos/6605189/pexels-photo-6605189.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A chef in a traditional Portuguese bakery tosses pizza dough with skill, illuminated by natural daylight." width="434" height="650">
+            <h4>Master Baker Marco</h4>
+            <p>Head Baker & Co-Founder</p>
+          </div>
+          <div class="team-member">
+            <img src="https://images.pexels.com/photos/15807002/pexels-photo-15807002.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Two female chefs in a busy kitchen preparing meals, captured in a classic black and white style." width="429" height="650">
+            <h4>Chef Sarah & Maria</h4>
+            <p>Pastry Specialists</p>
+          </div>
         </div>
-    </section>
-    <section class="our-story">
-        <h2>Our Story</h2>
-        <p>Brief text about the bakery...</p>
-        <a href="about.html">Read More</a>
-    </section>
-    <section class="testimonials">
-        <h2>Testimonials</h2>
-        <div class="carousel">
-            <p>Customer review 1</p>
-            <p>Customer review 2</p>
+      </div>
+    </div>
+  </section>
+    <!-- Testimonials -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <p>"The best bakery in town! Their sourdough is absolutely incredible, and the staff is always so friendly."</p>
+          <div class="testimonial-author">
+            <strong>Sarah Johnson</strong>
+            <span>Regular Customer</span>
+          </div>
         </div>
-    </section>
-    <footer>
-        <p>Contact: info@bakery.com</p>
-        <p>Follow us on social media</p>
-        <p><a href="privacy.html">Privacy Policy</a></p>
-    </footer>
+        <div class="testimonial">
+          <p>"RockBakers made our wedding cake and it was perfect! Beautiful design and even better taste."</p>
+          <div class="testimonial-author">
+            <strong>Mike & Lisa Chen</strong>
+            <span>Wedding Clients</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>"I stop by every morning for their fresh croissants. It's become my favorite part of the day!"</p>
+          <div class="testimonial-author">
+            <strong>David Rodriguez</strong>
+            <span>Daily Customer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Shopping Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Shopping Cart</h2>
+        <span class="close" id="close-cart">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div id="cart-items"></div>
+        <div class="cart-total">
+          <strong>Total: R<span id="cart-total">0.00</span></strong>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="clear-cart">Clear Cart</button>
+        <button class="btn btn-primary" id="checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+      <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>RockBakers</h3>
+          <p>Artisan bakery serving fresh, handcrafted breads and pastries since 2010.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Products</a></li>
+            <li><a href="blog.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Custom Cakes</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">Wholesale</a></li>
+            <li><a href="#">Baking Classes</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 RockBakers. All rights reserved. | Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
+
